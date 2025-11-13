@@ -1,0 +1,35 @@
+
+
+.site-header {
+  @apply sticky z-10 w-full bg-white top-0 right-0 left-0 mx-auto ;
+
+  .top-bar {
+    @apply flex justify-between items-center bg-white;
+
+    .logo {
+      height: auto;
+      width: 64px;
+    }
+  }
+ 
+  .home-link {
+    @apply p-4 relative z-20 mr-auto;
+    flex: 0 0 auto; 
+  }
+
+  @screen md {
+    .top-bar {
+      .logo {
+        width: 90px;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+.wp-block-mdlr-styles-jsx-example {
+  background-color: #333;
+  color: #fff;
+  padding: 2em 3em;
+}
+
+.wp-block-mdlr-featured-image button.is-button.is-default {
+  display: none;
+}
+
+.wp-block-mdlr-featured-image button.is-destructive {
+  overflow: hidden;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-indent: -500px;
+  top: 0;
+  width: 44px;
+}
+
+.wp-block-mdlr-featured-image button.is-destructive::after {
+  background-color: #fff;
+  color: #555d66;
+  content: '\f335';
+  display: block;
+  font-family: dashicons;
+  font-size: 32px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  width: 44px;
+}
+
+.wp-block-mdlr-featured-image button.is-destructive:hover::after {
+  background-color: #eee;
+}

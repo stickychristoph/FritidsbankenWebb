@@ -1,0 +1,10 @@
+.fb-single.content{
+
+  > div > img[class*="wp-image-"]{
+    @apply mx-auto my-6 max-w-media;
+  }
+  > p > img[class*="wp-image-"]{
+    @apply mx-auto my-6;
+  }
+
+}

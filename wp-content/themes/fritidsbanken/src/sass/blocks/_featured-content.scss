@@ -1,0 +1,56 @@
+.fb-featured-content-block {
+  @apply relative py-14 px-4;
+
+  .bg-image {
+    @apply absolute top-0 bottom-0 left-0 right-0 w-full h-full object-cover;
+  }
+
+  .featured-content {
+    @apply relative bg-white;
+   
+   
+    border-radius: 25px;
+  }
+
+  .featured-image {
+    @apply object-cover w-full;
+
+    border-radius: 25px 25px 0 0;
+    height: 230px;
+  }
+
+  .text-container {
+    @apply pt-5 pb-1;
+
+    h2 {
+      @extend %heading-1;
+    }
+  }
+
+  @screen md {
+    @apply py-24;
+  
+    .featured-content {
+      @apply flex flex-row items-stretch;
+
+      > * {
+        flex: 1 1 50%;
+      }
+    }
+
+    .featured-image {
+      @apply h-full; 
+      border-radius: 25px 0 0 25px;
+    }
+
+    .text-container {
+      @apply my-auto p-8;
+
+      h2 {
+        @apply mt-2;
+      }
+    }
+  }
+
+
+}

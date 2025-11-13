@@ -1,0 +1,19 @@
+.fb-single {
+  @apply pb-20;
+
+  .date {
+    @apply mb-2 pt-4;
+  }
+
+  .featured-image {
+    @apply mx-auto max-w-media my-8;
+
+  }
+
+  @screen md {
+    .date {
+      @apply pt-10;
+    }
+  }
+
+}

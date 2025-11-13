@@ -1,0 +1,11 @@
+.wp-block-image {
+  @apply mx-auto my-6 max-w-media;
+  
+  img {
+    /* max-width: 360px; */
+  }
+  figcaption {
+    @apply px-4;
+    line-height: 1.4;
+  }
+}

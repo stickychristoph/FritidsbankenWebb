@@ -1,0 +1,67 @@
+{
+    "key": "group_616422b30b58d",
+    "title": "Hitta bank - Block",
+    "fields": [
+        {
+            "key": "field_616422bbb6dd1",
+            "label": "Söktext",
+            "name": "search_label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Sök efter Fritidsbank",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61642308d8fe4",
+            "label": "Öppnar inom kort",
+            "name": "opening_soon",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Öppnar inom kort!",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/find-bank"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1692368690,
+    "local_file": "\/var\/www\/html\/wp-content\/themes\/fritidsbanken\/acf-json\/group_616422b30b58d.json",
+    "acfml_field_group_mode": "advanced"
+}

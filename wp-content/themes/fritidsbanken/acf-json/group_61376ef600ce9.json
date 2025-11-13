@@ -1,0 +1,51 @@
+{
+    "key": "group_61376ef600ce9",
+    "title": "Kontaktpersoner-Block",
+    "fields": [
+        {
+            "key": "field_61376efe7f692",
+            "label": "Kontaktpersoner",
+            "name": "contacts",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "contact"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/contacts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1692368690,
+    "local_file": "\/var\/www\/html\/wp-content\/themes\/fritidsbanken\/acf-json\/group_61376ef600ce9.json",
+    "acfml_field_group_mode": "advanced"
+}

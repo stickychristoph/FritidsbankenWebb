@@ -1,0 +1,72 @@
+{
+    "key": "group_6131dc6ec0bbf",
+    "title": "Tema-inställningar",
+    "fields": [
+        {
+            "key": "field_6131dcc0b1527",
+            "label": "Dela-bild",
+            "name": "share-image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_61b83ed1fb8c7",
+            "label": "Språkväxlare",
+            "name": "lang_selector",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1692368690,
+    "local_file": "\/var\/www\/html\/wp-content\/themes\/fritidsbanken\/acf-json\/group_6131dc6ec0bbf.json",
+    "acfml_field_group_mode": "advanced"
+}

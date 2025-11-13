@@ -1,0 +1,73 @@
+{
+    "key": "group_61b860d1c702f",
+    "title": "Lättläst växlare - Block",
+    "fields": [
+        {
+            "key": "field_61b861345a2bd",
+            "label": "Titel",
+            "name": "label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": "Växla till lättläst",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b860de59c42",
+            "label": "Lättläst sida",
+            "name": "related_page",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/easy-to-read"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1692368690,
+    "local_file": "\/var\/www\/html\/wp-content\/themes\/fritidsbanken\/acf-json\/group_61b860d1c702f.json",
+    "acfml_field_group_mode": "advanced"
+}

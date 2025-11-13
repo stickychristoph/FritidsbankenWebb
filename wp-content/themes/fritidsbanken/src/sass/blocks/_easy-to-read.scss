@@ -1,0 +1,29 @@
+.fb-easy-to-read{
+  @apply relative;
+
+
+  .button-wrapper {
+    @apply px-4 mb-8 mt-8 max-w-text mx-auto; 
+    
+  }
+
+  .easy-to-read-button{
+    @apply relative border-2 border-blue-500 inline-flex items-center justify-center text-center no-underline bg-blue-500 text-white font-semibold rounded-full py-2 px-4 cursor-pointer; 
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    .icon{
+      @apply mr-2;
+    }
+
+    &.toggled{
+      @apply text-blue-700 bg-white border-blue-700;
+
+      path{
+        @apply stroke-current;
+      }
+    }
+  }
+}

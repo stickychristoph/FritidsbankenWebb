@@ -1,0 +1,56 @@
+/*!
+Theme Name: Fritidsbanken V3
+Theme URI: http://stickybeat.se
+Description:
+Author: Sticky Beat
+Text Domain: fritidsbanken
+Version: 3.1
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'lib/typography';
+@import 'lib/button';
+@import 'lib/card';
+@import 'lib/common';
+@import 'lib/classic_editor_styles';
+@import 'lib/disclaimer';
+@import 'lib/footer';
+@import 'lib/form-elements';
+@import 'lib/header';
+@import 'lib/my_icons_font';
+@import 'lib/navigation';
+@import 'lib/spinner';
+@import 'lib/text-link';
+
+
+@import 'fontawesome/font-awesome';
+
+@import 'blocks/anchor-menu';
+@import 'blocks/block_group';
+@import 'blocks/bank-inventory';
+@import 'blocks/contacts';
+@import 'blocks/core';
+@import 'blocks/embed';
+@import 'blocks/easy-to-read';
+@import 'blocks/featured-content';
+@import 'blocks/featured-image';
+@import 'blocks/find-bank';
+@import 'blocks/image';
+@import 'blocks/list';
+@import 'blocks/news-list';
+@import 'blocks/news-recent';
+@import 'blocks/press';
+@import 'blocks/quote';
+@import 'blocks/start-hero';
+
+
+@import 'pages/archive';
+@import 'pages/page';
+@import 'pages/single';
+@import 'pages/single_bank';
+@import 'pages/startpage';
+
+@import '../../../../../node_modules/mapbox-gl/dist/mapbox-gl.css';

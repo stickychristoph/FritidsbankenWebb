@@ -1,0 +1,98 @@
+body.home {
+  .content {
+    > *:first-child {
+      .overlay-bg {
+        @apply absolute top-0 bottom-0 right-0 left-0 bg-no-repeat;
+        background-image: url('assets/img/football_overlay.svg');
+
+        background-position: calc(100% + 200px) calc(100% + 240px);
+        background-size: 1414px 381px;
+
+        @screen md {
+          background-position: calc(100% + 500px) calc(100% + 660px);
+        
+          background-size: auto;
+        }
+      }
+    }
+
+    > *:nth-child(2) {
+      .overlay-bg {
+        @apply absolute top-0 bottom-0 right-0 left-0 bg-no-repeat;
+        background-image: url('assets/img/football_overlay.svg');
+        background-position: calc(100% + 200px) calc(0% - 141px);
+
+        background-size: 1414px 381px;
+
+        @screen md {
+          background-position: calc(100% + 500px) calc(0% - 484px);
+          
+          background-size: auto;
+        }
+
+        &::after {
+          @apply absolute top-0 bottom-0 right-0 left-0 bg-no-repeat;
+          background-image: url('assets/img/ski_tracks_overlay.svg');
+          background-position: calc(0% - 80px) calc(100% + 100px);
+          
+          //width="1856" height="660"
+          background-size: 619px 220px;
+          content: '';
+
+          @screen md {
+            background-position: calc(0% - 40px) calc(100% + 344px);
+            background-size: auto;
+          }
+
+        }
+      }
+    }
+
+    > *:nth-child(3) {
+      .overlay-bg {
+        @apply absolute top-0 bottom-0 right-0 left-0 bg-no-repeat;
+        background-image: url('assets/img/ski_tracks_overlay.svg');
+        background-position: calc(0% - 80px) calc(0% - 120px);
+          
+        background-size: 619px 220px;
+        @screen md {
+          background-position: calc(0% - 40px) calc(0% - 317px);
+          background-size: auto;
+        }
+
+        &::after {
+          @apply absolute top-0 bottom-0 right-0 left-0 bg-no-repeat;
+          background-image: url('assets/img/basket_overlay.svg');
+          background-position: calc(0% - 330px) calc(100% + 370px);
+          
+          //width="1689" height="1702"
+          background-size: 844px 851px;
+          content: '';
+
+          @screen md {
+            background-position: calc(0% - 540px) calc(100% + 880px);
+            background-size: auto;
+          }
+
+        }
+      }
+
+    }
+
+    > *:nth-child(4) {
+      .overlay-bg {
+        @apply absolute top-0 bottom-0 right-0 left-0 bg-no-repeat;
+        background-image: url('assets/img/basket_overlay.svg');
+        background-position: calc(0% - 330px) calc(0% - 481px);
+       
+       
+        background-size: 844px 851px;
+
+        @screen md {
+          background-position: calc(0% - 540px) calc(0% - 822px);
+          background-size: auto;
+        }
+      }
+    }
+  }
+}

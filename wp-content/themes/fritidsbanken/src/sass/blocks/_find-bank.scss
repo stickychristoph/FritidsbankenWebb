@@ -1,0 +1,228 @@
+@use "sass:math";
+
+.findbank-wrapper {
+  display: flex;
+  font-size: 14px;
+
+  .search-wrapper {
+    flex: 1 1 100%;
+
+    height: 100%;
+    min-height: 400px;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .search-form {
+    @apply bg-green-500 flex;
+    align-items: flex-end;
+    flex-direction: row;
+    min-height: 60px;
+    padding: 20px 10px;
+
+    .nearest-bank-loader {
+      @apply relative;
+      align-self: stretch;
+      flex: 0 0 50px;
+      font-size: 26px;
+
+      .spinner {
+        @apply text-white opacity-0;
+      }
+
+      &.loading {
+        @apply pointer-events-none;
+
+        .spin-wrapper {
+          @apply block;
+        }
+
+        .spinner {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .map-legends {
+    @apply flex items-center flex-wrap gap-6;
+    padding: 20px 30px;
+  }
+
+  .map-legend {
+    @apply bg-white flex items-center whitespace-nowrap;
+
+    &.hidden {
+      visibility: hidden;
+
+      + .no-result {
+        display: block;
+      }
+    }
+    span {
+      padding-left: 6px;
+    }
+  }
+
+  .no-result {
+    display: none;
+    padding: 0px 30px;
+  }
+
+  .bank-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      cursor: pointer;
+      padding: 20px 30px;
+      position: relative;
+
+      .arrow-down {
+        @apply ml-auto mr-0;
+      }
+
+      .bank-info-wrapper {
+        display: none;
+
+        .wp-block-buttons,
+        h4,
+        p {
+          @apply px-0 mb-0 pt-0;
+        }
+
+        .bank-address,
+        .bank-openhours-container,
+        .bank-contact-container {
+          margin-bottom: 20px;
+        }
+
+        .isopening-title {
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+      }
+
+      &.active {
+        @apply bg-green-100;
+
+        .arrow-down {
+          transform: rotate(-180deg);
+        }
+
+        .bank-city {
+          @apply font-bold;
+
+          img {
+            transform: rotate(-180deg);
+          }
+        }
+
+        .bank-info-wrapper {
+          display: block;
+        }
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  .bank-list {
+    .bank-city {
+      @apply flex flex-row justify-between items-center;
+      font-size: 18px;
+      font-weight: 500;
+
+      img {
+        @apply duration-100 transition-transform;
+      }
+    }
+
+    .isopening-title {
+      font-size: 16px;
+    }
+  }
+
+  .map-wrapper {
+    @apply hidden;
+    flex: 1 0 math.div(800, 1200) * 100%;
+    height: 100%;
+
+    max-height: 100%;
+    position: relative;
+  }
+
+  .marker {
+    &::after {
+      display: block;
+      content: ''; /* Required for pseudo-elements to render */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-image: url('assets/icons/marker_black.svg');
+      background-repeat: no-repeat;
+    }
+    &.opening-soon {
+      &::after {
+        background-image: url('assets/icons/map_marker_blue.svg');
+      }
+      &.active::before {
+        box-shadow: 0 0 10px 8px rgba(72, 159, 223, 0.8);
+      }
+    }
+    &.has-parent{
+
+      &::after {
+        background-image: url('assets/icons/marker_orange.svg');
+      }
+      &.active::before {
+        box-shadow: 0 0 10px 8px rgba(234, 118, 0, 0.7);
+      }
+    }
+  }
+  .marker.active::before {
+    content: ''; /* Required for pseudo-elements to render */
+    position: absolute;
+    bottom: -7px; /* Adjust this value to position the ellipse */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px; /* Width of the ellipse */
+    height: 12px; /* Height of the ellipse */
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.5); /* Orange glow effect */
+    border-radius: 50%; /* This is the key to creating the ellipse shape */
+    z-index: -1;
+    pointer-events: none; /* Prevents interference with mouse events */
+  }
+
+  .map {
+    height: 100%;
+    width: 100%;
+  }
+
+  @screen md {
+    height: calc(100vh - 232px);
+    min-height: 500px;
+    overflow-x: hidden;
+
+    .search-wrapper {
+      flex: 1 0 math.div(400, 1200) * 100%;
+      max-width: 500px;
+      min-width: 330px;
+    }
+
+    .search-form {
+      padding: 20px 30px;
+    }
+
+    .map-wrapper {
+      @apply flex;
+    }
+  }
+  @screen lg {
+    height: calc(100vh - 232px);
+  }
+}

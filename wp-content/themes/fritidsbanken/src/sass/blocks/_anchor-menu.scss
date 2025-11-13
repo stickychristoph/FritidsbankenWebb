@@ -1,0 +1,18 @@
+.fb-anchor-menu {
+  .anchor-list {
+    @apply list-none;
+  }
+  @screen sm {
+    .anchor-list {
+      @apply flex flex-wrap flex-row py-6;
+
+      li {
+        &:not(:last-child)::after {
+          @apply inline-block px-2;
+          content: '|';
+          flex: 0 0 auto;
+        }
+      }
+    }
+  }
+}

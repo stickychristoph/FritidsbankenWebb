@@ -1,0 +1,27 @@
+
+
+.wp-block-quote {
+  @apply border-0 p-6 max-w-text text-center;
+
+  border-left: 0;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 20px;
+
+
+  p {
+    @apply italic mb-0;
+    display: block;
+
+  }
+
+  cite {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+  

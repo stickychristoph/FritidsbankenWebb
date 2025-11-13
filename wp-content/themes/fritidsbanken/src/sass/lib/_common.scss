@@ -1,0 +1,57 @@
+
+html {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  height: stretch;
+  overflow-y: scroll;
+  text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  width: 100%;
+  word-spacing: 1px;
+  scroll-behavior:smooth
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+body.fb-ff {
+  @apply text-black tracking-normal not-italic font-normal flex flex-col ;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 100%;
+  width: 100%;
+
+  .content {
+    flex-grow: 1;
+    scroll-margin-top:74px;
+  }
+}
+
+a {
+  @apply no-underline;
+}
+
+img {
+  max-width: 100%;
+  /*   width: auto; */
+}
+
+.content-inner {
+  @apply max-w-content-inner mx-auto;
+}
+
+.content-outer {
+  @apply max-w-content-outer mx-auto;
+
+  
+}
+
+

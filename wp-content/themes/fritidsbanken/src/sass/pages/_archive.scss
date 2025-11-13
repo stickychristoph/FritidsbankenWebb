@@ -1,0 +1,19 @@
+.archive.post-type-archive-pressrelease {
+  .press-release {
+    @apply mb-6 no-underline;
+  }
+
+  .press-release-date {
+    @apply mb-2;
+  }
+
+  @screen md {
+    .press-release {
+      h2 {@apply mt-0 mb-4;}
+    }
+  }
+}
+
+.fb-archive {
+  @apply mt-6;
+}

@@ -1,0 +1,48 @@
+{
+    "key": "group_63ee00ab271ff",
+    "title": "Lagersaldo-inställningar",
+    "fields": [
+        {
+            "key": "field_63ee00c39f953",
+            "label": "Disclaimer",
+            "name": "bank_inventory_disclaimer",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Observera att sökresultatet är preliminärt och att Fritidsbanken inte kan garantera att specifik utrustning finns i lager. I en övergångsperiod finns inte alla artiklar och all data (exempelvis storlekar) registrerade på samtliga fritidsbanker. All utrustning som returneras besiktas och servas vid behov, vilket innebär att det kan dröja ett par dagar innan den finns tillgänglig för utlån. På grund av utrymmesbrist på vissa fritidsbanker förvaras en del utrustning säsongsvis i separata lager, vilket gör att den kanske inte är tillgänglig trots att sökresultatet visar annorlunda.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br",
+            "wpml_cf_preferences": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-lagersaldo"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1692368690,
+    "local_file": "\/var\/www\/html\/wp-content\/themes\/fritidsbanken\/acf-json\/group_63ee00ab271ff.json",
+    "acfml_field_group_mode": "advanced"
+}

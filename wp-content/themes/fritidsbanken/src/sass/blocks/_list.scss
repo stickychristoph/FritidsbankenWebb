@@ -1,0 +1,15 @@
+.content {
+  ol,
+  ul {
+    @apply px-4 py-0 max-w-text mx-auto my-4;
+    list-style-position: inside;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+}

@@ -1,0 +1,87 @@
+.content {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p.has-background,
+  h1.has-background,
+  h2.has-background,
+  h3.has-background,
+  h4.has-background,
+  h5.has-background,
+  h6.has-background {
+    @apply px-4 py-0 mt-0 max-w-text mx-auto; 
+    
+  }
+
+  .has-white-background-color {
+    @apply bg-white;
+  }
+
+  .has-black-background-color {
+    @apply bg-black;
+  }
+
+  .has-gray-100-background-color {
+    @apply bg-gray-100;
+  }
+
+  .has-green-500-background-color {
+    @apply bg-green-500;
+  }
+
+ 
+
+
+  h1 {
+    @extend %heading-1;
+    @apply mb-5;
+
+  }
+
+  h2 {
+    @extend %heading-2;
+    @apply mb-5;
+
+    @screen lg {  
+      @apply mt-8;
+    }
+  }
+
+  h3 {
+    @extend %heading-3;
+    @apply mb-2;
+
+    @screen lg {  
+      @apply mt-7;
+    }
+  }
+
+  h4 {
+    @extend %heading-4;
+    @apply mb-2;
+  }
+
+  h6 {
+    @extend %heading-6;
+  }
+
+  p {
+    @apply mb-4;
+
+    &:empty {
+      display: none;
+    }
+
+    &.has-p-md-font-size {
+      @extend %p-md;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

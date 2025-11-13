@@ -1,0 +1,81 @@
+.press-block {
+  .press-nav {
+    @apply list-none;
+  }
+
+  .offsetted-anchor {
+    @apply relative;
+
+    top: -80px;
+
+  }
+
+  .press-information-body {
+    @apply my-8;
+  }
+
+  .press-release {
+    @apply mb-6 no-underline;
+  }
+
+  .press-release-date {
+    @apply mb-2;
+  }
+
+  .press-images {
+    @apply max-w-text mx-auto flex flex-wrap flex-row pl-4;
+  }
+
+  .press-image {
+    @apply pr-5 mb-5;
+    flex: 1 1 200px;
+
+    .press-thumbnail-wrapper {
+      @apply relative my-4 block;
+      padding-bottom: 100%;
+    }
+
+    .press-thumbnail {
+      @apply absolute top-0 bottom-0 left-0 right-0 w-full h-full  object-cover;
+    }
+
+    h4,
+    p {
+      @apply px-0;
+    }
+
+    p {
+      @apply mb-3;
+    }
+
+    .download-link {
+      @apply no-underline font-semibold;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @screen sm {
+    .press-nav {
+      @apply flex flex-wrap flex-row py-6;
+
+      li {
+        &:not(:last-child)::after {
+          @apply inline-block px-2;
+          content: '|';
+          flex: 0 0 auto;
+        }
+      }
+    }
+
+    .press-release {
+      h2 {@apply mt-0 mb-4;}
+    }
+
+    .press-image {
+      flex: 1 1 180px;
+
+    }
+
+  }
+}

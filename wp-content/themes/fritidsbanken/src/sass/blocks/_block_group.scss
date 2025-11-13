@@ -1,0 +1,17 @@
+
+.wp-block-group.has-background {
+  @apply pt-8 pb-6 px-0 ;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  @screen md {
+    @apply py-20;
+  }
+
+}
+
+.wp-block-group.has-background + :not(.has-background) {
+  @apply mt-10;
+}
+
+

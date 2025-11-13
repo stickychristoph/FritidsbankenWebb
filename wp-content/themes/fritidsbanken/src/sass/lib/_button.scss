@@ -1,0 +1,86 @@
+.wp-block-buttons {
+  @apply pt-4 mb-4 px-4 mx-auto max-w-text;
+  display: block !important;
+
+  + .wp-block-buttons {
+    @apply mt-4 pt-0; }
+}
+
+.wp-block-button {
+  @apply w-full;
+
+ 
+  .wp-block-button__link {
+    @apply relative w-full flex items-center justify-center text-center no-underline pr-10;
+
+       
+    span {
+      @apply relative m-auto font-medium;
+    }
+
+    .icon {
+      @apply absolute block ml-0 mr-auto;
+      left: 20px;
+    }
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+
+    &.white,
+    &.white:hover {
+      @apply bg-white;
+
+      span {
+        @apply text-black; }
+    }
+
+    &.orange,
+    &.orange:hover {
+      @apply bg-orange-500;
+
+      span {
+        @apply text-white; }
+    }
+
+    &.magenta,
+    &.magenta:hover {
+      @apply bg-magenta-500;
+
+      span {
+        @apply text-white; }
+    }
+
+    &.blue,
+    &.blue:hover {
+      @apply bg-blue-500;
+
+      span {
+        @apply text-white; }
+    }
+
+    &.green,
+    &.green:hover {
+      @apply bg-green-500;
+
+      span {
+        @apply text-white; }
+    }
+  }
+
+
+  @screen md {
+    @apply w-auto;
+    min-width: none;
+
+    .wp-block-button__link {
+      @apply inline-flex w-auto pl-6 pr-6;
+
+      &.w-icon {
+        @apply pl-12;
+      }
+    }
+  }
+
+}

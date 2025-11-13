@@ -1,0 +1,36 @@
+.news-recent-block {
+  @apply relative pt-14;
+
+  .bg-image {
+    @apply absolute top-0 bottom-0 left-0 right-0 w-full h-full object-cover;
+
+
+  }
+
+  .news-items {
+    @apply relative flex flex-row  flex-wrap;
+
+    .news-list-item {
+      @apply mb-5 mx-4; 
+      flex: 1 1 320px;
+
+      &.filler {
+        @apply mb-0;
+      }
+    }
+  }
+
+  .show-all {
+    @apply flex justify-center pt-1 pb-6;
+  }
+
+
+  @screen md {
+    @apply pt-24 pb-10;
+
+    .news-items {
+      .news-list-item {
+        @apply mb-8; }}
+
+  }
+}

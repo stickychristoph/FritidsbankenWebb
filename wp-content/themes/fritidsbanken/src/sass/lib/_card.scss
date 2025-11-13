@@ -1,0 +1,37 @@
+.fb-card {
+  @apply bg-white;
+  border-radius: 25px;
+
+  > a.card-link {
+    @apply no-underline flex flex-col h-full;
+  }
+
+  .card-image {
+    @apply object-cover w-full;
+    flex: 0 0 220px;
+    border-radius: 25px 25px 0 0;
+    height: 220px;
+  }
+
+  .text-container {
+    @apply pt-5 pb-1 flex flex-col h-full items-stretch;
+
+    .tag {
+      @extend %heading-6;
+      @apply text-magenta-500 w-full mt-1;
+    }
+
+    h2 {
+      @apply w-full mt-3; }
+
+    .card-button {
+      @apply mt-auto mb-0;
+    }
+  }
+
+  @screen md {
+    .text-container {
+      @apply px-2;
+    }
+  }
+}

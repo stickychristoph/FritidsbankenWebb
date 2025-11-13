@@ -1,0 +1,56 @@
+version: "3.8"
+
+services:
+  # Service 1: The MariaDB Database
+  db:
+    image: mariadb:10.5
+    platform: linux/arm64/v8
+    container_name: wordpress_db
+    # This volume stores the database data.
+    # We use a "named volume" (db_data) which Docker manages.
+    # This is safer and performs better than mapping a local folder.
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "root_password"
+      MYSQL_DATABASE: "wordpress_db"
+      MYSQL_USER: "wordpress_user"
+      MYSQL_PASSWORD: "wordpress_password"
+    restart: unless-stopped
+    # No ports exposed to the host machine.
+    # We will connect using Adminer.
+
+  # Service 2: The WordPress Application
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress_app
+    # This is the volume mapping you requested.
+    # It maps the ./wp-content folder on your computer
+    # to the container's wp-content folder.
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+    # These variables MUST match the 'db' service's environment
+    environment:
+      WORDPRESS_DB_HOST: "db:3306" # 'db' is the service name
+      WORDPRESS_DB_NAME: "wordpress_db"
+      WORDPRESS_DB_USER: "wordpress_user"
+      WORDPRESS_DB_PASSWORD: "wordpress_password"
+    ports:
+      - "8080:80" # Access your site at http://localhost:8080
+    restart: unless-stopped
+    depends_on:
+      - db # Tells WordPress to wait until the 'db' service is healthy
+
+  # Service 3: The Database Admin Tool
+  adminer:
+    image: adminer
+    container_name: wordpress_adminer
+    restart: unless-stopped
+    ports:
+      - "8081:8080" # Access Adminer at http://localhost:8081
+    depends_on:
+      - db # Wait for the db to be ready
+
+# Top-level "volumes" key defines the named volume we used above
+volumes:
+  db_data:

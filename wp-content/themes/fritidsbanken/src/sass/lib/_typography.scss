@@ -1,0 +1,50 @@
+%heading-1 {
+  @apply font-bold;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+  font-size: 26px;
+  line-height: 111%;
+  scroll-margin-top: 4rem;
+
+  @screen md {
+    font-size: 40px;
+  } 
+}
+%heading-2 {
+  @apply font-bold;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+  font-size: 22px;
+  line-height: 126%;
+  scroll-margin-top: 4rem;
+}
+
+%heading-3 {
+  @apply font-bold;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+  font-size: 18px;
+  line-height: 126%; 
+  scroll-margin-top: 4rem;
+}
+
+%heading-4 {
+  @apply font-bold;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 160%;
+}
+%heading-6 {
+  @apply font-normal text-magenta-500;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+
+%p-md {
+  @apply font-medium;
+  font-size: 18px;
+  line-height: 160%;
+  @screen md {
+    font-size: 22px;
+  } 
+}

@@ -1,0 +1,51 @@
+.fb-startpage-hero {
+  @apply bg-green-500 text-white relative py-10;
+
+  .bg-image {
+    @apply top-0 left-0 right-0 bottom-0 absolute object-cover w-full h-full;
+  }
+
+  .stop-video {
+    @apply absolute p-4 cursor-pointer transition-all duration-300;
+    bottom: 0;
+    right: 0;
+
+    &.stopped {
+      @apply opacity-0 pointer-events-none;
+    }
+  }
+
+  .video-gradient {
+    @apply absolute top-0 bottom-0 left-0 right-0;
+    background: linear-gradient(78.73deg, rgba(77, 157, 52, 0.95) 31.02%, rgba(77, 157, 52, 0) 76.78%);
+  }
+
+  .text-container {
+    @apply relative inline-flex flex-col;
+  }
+
+  .button-container {
+    @apply flex flex-col items-center;
+
+    .wp-block-buttons {
+      @apply w-full;
+    }
+  }
+
+  @screen md {
+    @apply py-32;
+
+    .button-container {
+      @apply flex-row;
+
+      .wp-block-buttons {
+        @apply w-auto ml-0 mr-5;
+      }
+    }
+
+    .stop-video {
+      bottom: 25px;
+      right: 35px;
+    }
+  }
+}

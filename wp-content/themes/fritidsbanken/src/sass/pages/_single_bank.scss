@@ -1,0 +1,47 @@
+.single-bank {
+  @apply pt-4 pb-20;
+
+  h1 {
+    @apply mb-1;
+  }
+
+  .map-wrapper {
+    @apply max-w-media mx-auto my-8;
+    padding-bottom: 250px;
+    position: reltaive;
+    width: 100%;
+  }
+  .map-image {
+    @apply my-8 mx-auto object-cover w-full;
+    max-width: 700px;
+    height: 250px;
+  }
+
+  .single-bank-image-container {
+    @apply my-8;
+
+    img {
+      @apply mx-auto block max-w-text w-full px-4;
+    }
+  }
+
+  .affiliate-logo {
+    @apply w-20;
+    @screen md {
+      @apply w-32;
+    }
+  }
+
+  @screen md {
+    @apply pt-10 pb-20;
+
+    .map-wrapper {
+      @apply my-12;
+      padding-bottom: 430px;
+    }
+
+    .map-image {
+      height: 430px;
+    }
+  }
+}
